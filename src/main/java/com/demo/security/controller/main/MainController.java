@@ -24,7 +24,7 @@ public class MainController {
         Page<Main> pageData = mainService.getMainPage(page, size);
 
         model.addAttribute("MainList", pageData.getContent());
-        model.addAttribute("cmd", pageData.getCurrentPage());
+        model.addAttribute("currentPage", pageData.getCurrentPage());
         model.addAttribute("totalPages", pageData.getTotalPages());
         model.addAttribute("totalItems", pageData.getTotalItems());
         model.addAttribute("pageSize", pageData.getPageSize());
