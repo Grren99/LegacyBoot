@@ -4,6 +4,7 @@
 <mapper namespace="com.demo.security.mapper.MainMapper">
 
     <select id="selectMainWithPaging"  resultType="com.demo.security.model.Main">
+
         <![CDATA[
         SELECT * FROM (
                           SELECT
@@ -17,10 +18,13 @@
                       ) AS numbered_posts
         WHERE row_number > #{offset} AND row_number <= #{offset} + #{limit}
         ]]>
+
     </select>
 
     <select id="countTotalItems" resultType="int">
+
         SELECT COUNT(*) FROM board;
+
     </select>
 
 </mapper>
