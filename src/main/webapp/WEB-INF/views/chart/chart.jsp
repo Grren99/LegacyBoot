@@ -4,13 +4,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>chart</title>
+    <!-- 구글 차트 라이브러리 (CDN) -->
     <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
     <script type="text/javascript">
+        // 차트를 그리는 함수 Google Chart !
         google.charts.load('current', {'packages':['corechart']});
         google.charts.setOnLoadCallback(drawChart);
 
         function drawChart() {
-            var data = google.visualization.arrayToDataTable([
+            // 들어갈 데이터 ([[이름, 값]])
+            let data = google.visualization.arrayToDataTable([
                 ['Time', '입입지수'],
                 ['0시',  0],
                 ['1시',  0],
@@ -39,17 +42,21 @@
             ]);
 
             var options = {
-                legend: { position: 'right', textStyle: { fontSize: 14 } },
+                // 범례 위치 설정
+                legend: {
+                    position: 'right',
+                },
                 titleTextStyle: { fontSize: 14 },
                 hAxis: { textStyle: { fontSize: 14 }, titleTextStyle: { fontSize: 14 } },
                 vAxis: { textStyle: { fontSize: 14 }, titleTextStyle: { fontSize: 14 } },
                 width : 1000,
                 height : 400,
-                colors: ['#ff0000'] // red
+                colors: ['#F13E3E'], // 선 색상 설정
             };
-
+            // 아이디를 얻어와서 차트를 draw 함 !
             var chart = new google.visualization.LineChart(document.getElementById('curve_chart'));
             chart.draw(data, options);
+
         }
     </script>
     <style>
@@ -72,7 +79,9 @@
         }
     </style>
 </head>
+
 <body>
-<div id="curve_chart"></div>
+        <div id="curve_chart"></div>
 </body>
+
 </html>
