@@ -1,16 +1,15 @@
-package com.demo.security.controller.toast;
+package com.demo.security.controller.hansu;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 
 @Controller
-@RequestMapping("/toast")
-public class ToastController {
+@RequestMapping("/hansu")
+public class HansuController {
 
     @GetMapping
-    public String toastHome() {
-        return "toastEditor/toast";
+    public String hansu() {
+        return "hansu/hansu";
     }
-
 }

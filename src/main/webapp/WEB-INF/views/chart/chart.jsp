@@ -14,7 +14,7 @@
         function drawChart() {
             // 들어갈 데이터 ([[이름, 값]])
             let data = google.visualization.arrayToDataTable([
-                ['Time', '입입지수'],
+                ['Time', '인입지수'],
                 ['0시',  0],
                 ['1시',  0],
                 ['2시',  0],
@@ -81,7 +81,7 @@
 </head>
 
 <body>
-        <div id="curve_chart"></div>
+<div id="curve_chart"></div>
 </body>
 
 </html>

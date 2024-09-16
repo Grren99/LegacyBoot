@@ -13,4 +13,8 @@ public class ChartController {
     public String chart() {
         return "chart/chart";
     }
+    @GetMapping("/2")
+    public String chart2() {
+        return "chart/chart2";
+    }
 }
