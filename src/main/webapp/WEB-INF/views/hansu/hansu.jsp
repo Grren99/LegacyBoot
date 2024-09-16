@@ -10,28 +10,31 @@
             margin: 0;
             padding: 0;
             font-family: 'Roboto', sans-serif;
-            background: linear-gradient(135deg, #74ebd5 0%, #ACB6E5 100%);
+            background: linear-gradient(135deg, #f47a64 0%, #f65da0 100%);
             display: flex;
             justify-content: center;
             align-items: center;
             height: 100vh;
-            color: #333;
+            color: #fff;
         }
 
         .layout {
             text-align: center;
-            background: rgba(255, 255, 255, 0.85);
+            background: rgba(255, 255, 255, 0.1);
             padding: 50px;
             border-radius: 15px;
-            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.4);
             max-width: 500px;
             width: 100%;
+            position: relative;
+            z-index: 1;
         }
 
         h1 {
             font-size: 2.5rem;
             margin-bottom: 20px;
-            color: #222;
+            color: #000;
+            text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
         }
 
         .layout::before {
@@ -43,8 +46,23 @@
             right: 0;
             bottom: 0;
             z-index: -1;
-            background: url('https://source.unsplash.com/1600x900/?nature') no-repeat center center/cover;
-            filter: blur(10px);
+            background: url('https://source.unsplash.com/1600x900/?sunset') no-repeat center center/cover;
+            filter: blur(8px) brightness(0.7);
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 10px 25px;
+            background-color: #FF512F;
+            color: white;
+            border-radius: 5px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: background-color 0.3s ease;
+        }
+
+        .btn:hover {
+            background-color: #DD2476;
         }
     </style>
 </head>
@@ -52,6 +70,7 @@
 <div class="layout">
     <h1>한수 입니돠앙 ! 아아</h1>
     <h1>한수 일겁니다 ! ! 아아</h1>
+    <a href="/" class="btn">돌아가자</a>
 </div>
 </body>
 </html>
