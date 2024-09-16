@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>chart</title>
     <!-- 구글 차트 라이브러리 (CDN) -->
-    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script type="text/javascript" src="/js/loader.js"></script>
     <script type="text/javascript">
         // 차트를 그리는 함수 Google Chart !
         google.charts.load('current', {'packages':['corechart']});
