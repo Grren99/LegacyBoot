@@ -82,7 +82,7 @@
 </head>
 <body>
 <div class="container">
-    <h1>준기임..</h1>
+    <h1>준기입니다</h1>
     <p>git repo..</p>
     <div class="repo-link">
         <a href="https://github.com/Grren99/LegacyBoot.git">
