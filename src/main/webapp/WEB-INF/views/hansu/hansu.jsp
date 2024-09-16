@@ -50,7 +50,7 @@
 </head>
 <body>
 <div class="layout">
-    <h1>한수 입니돠앙 ! 아아아이이</h1>
+    <h1>한수 입니돠앙 ! 아아아이</h1>
 </div>
 </body>
 </html>
