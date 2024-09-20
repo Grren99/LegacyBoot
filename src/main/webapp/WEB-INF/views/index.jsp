@@ -89,6 +89,7 @@
             <h3>https://github.com/Grren99/LegacyBoot.git</h3>
         </a>
     </div>
+    <a href="#" class="btn">남매니저님...</a>
     <a href="/hansu" class="btn">김한수..</a>
     <a href="/chart" class="btn">구글차트..</a>
     <div class="footer">
