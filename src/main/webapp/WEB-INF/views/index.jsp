@@ -90,7 +90,7 @@
         </a>
     </div>
     <a href="#" class="btn">남매니저님...</a>
-    <a href="/hansu" class="btn">김한수수수..</a>
+    <a href="/hansu" class="btn">김한수수수수..</a>
     <a href="/chart" class="btn">구글차트..</a>
     <div class="footer">
         &copy; 2024 Your Company. All rights reserved.
