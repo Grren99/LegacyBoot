@@ -32,7 +32,6 @@ public class MybatisConfig {
     @Value("${spring.datasource.password}")
     String password;
 
-
     @Bean
     public DataSource dataSource() {
         DataSourceBuilder<?> dataSourceBuilder = DataSourceBuilder.create();
@@ -42,8 +41,6 @@ public class MybatisConfig {
         dataSourceBuilder.password(password);
         return dataSourceBuilder.build();
     }
-
-
 
     @Bean(name = "SqlSessionFactory")
     public SqlSessionFactory SqlSessionFactory(@Qualifier("dataSource") DataSource DataSource, ApplicationContext applicationContext) throws Exception {
