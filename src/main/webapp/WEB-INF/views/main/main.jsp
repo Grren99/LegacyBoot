@@ -125,39 +125,39 @@
         </thead>
         <tbody>
         <!-- Sample Rows -->
-        <c:forEach var="list" items="${MainList}">
-            <tr>
-                <td>${list.id}</td>
-                <td>${list.title}</td>
-                <td>${list.author}</td>
-                <td>${list.createdAt}</td>
-            </tr>
-        </c:forEach>
+<%--        <c:forEach var="list" items="${MainList}">--%>
+<%--            <tr>--%>
+<%--                <td>${list.id}</td>--%>
+<%--                <td>${list.title}</td>--%>
+<%--                <td>${list.author}</td>--%>
+<%--                <td>${list.createdAt}</td>--%>
+<%--            </tr>--%>
+<%--        </c:forEach>--%>
         </tbody>
     </table>
     <!-- 페이지 네비게이션 -->
     <div class="pagination">
-        <c:if test="${currentPage > 1}">
-            <a href="?page=1&size=${pageSize}">First</a>
-            <a href="?page=${currentPage - 1}&size=${pageSize}">Previous</a>
-        </c:if>
+<%--        <c:if test="${currentPage > 1}">--%>
+<%--            <a href="?page=1&size=${pageSize}">First</a>--%>
+<%--            <a href="?page=${currentPage - 1}&size=${pageSize}">Previous</a>--%>
+<%--        </c:if>--%>
 
-        <!-- 페이지 번호 생성 -->
-        <c:forEach var="i" begin="1" end="${totalPages}">
-            <c:choose>
-                <c:when test="${i == currentPage}">
-                    <a href="?page=${i}&size=${pageSize}" class="active">${i}</a>
-                </c:when>
-                <c:otherwise>
-                    <a href="?page=${i}&size=${pageSize}">${i}</a>
-                </c:otherwise>
-            </c:choose>
-        </c:forEach>
+<%--        <!-- 페이지 번호 생성 -->--%>
+<%--        <c:forEach var="i" begin="1" end="${totalPages}">--%>
+<%--            <c:choose>--%>
+<%--                <c:when test="${i == currentPage}">--%>
+<%--                    <a href="?page=${i}&size=${pageSize}" class="active">${i}</a>--%>
+<%--                </c:when>--%>
+<%--                <c:otherwise>--%>
+<%--                    <a href="?page=${i}&size=${pageSize}">${i}</a>--%>
+<%--                </c:otherwise>--%>
+<%--            </c:choose>--%>
+<%--        </c:forEach>--%>
 
-        <c:if test="${currentPage < totalPages}">
-            <a href="?page=${currentPage + 1}&size=${pageSize}">Next</a>
-            <a href="?page=${totalPages}&size=${pageSize}">Last</a>
-        </c:if>
+<%--        <c:if test="${currentPage < totalPages}">--%>
+<%--            <a href="?page=${currentPage + 1}&size=${pageSize}">Next</a>--%>
+<%--            <a href="?page=${totalPages}&size=${pageSize}">Last</a>--%>
+<%--        </c:if>--%>
     </div>
     <!-- 게시물 작성 폼 -->
     <div class="form-container">
@@ -179,6 +179,7 @@
                 <button type="submit">Submit</button>
             </div>
         </form>
+
     </div>
 </div>
 </body>

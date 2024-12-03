@@ -92,9 +92,29 @@
     <a href="#" class="btn">남매니저님...</a>
     <a href="/hansu" class="btn">김한수수수수..</a>
     <a href="/chart" class="btn">구글차트..</a>
+    <br/><br/>
+    <a href="tel:0806006000" class="tel1">전화 테스트1 a태그</a>
+    <br/><br/>
+    <div class="tel2" onclick="tel2()">전화 테스트2 window</div>
+    <br/>
+    <div class="tel3" onclick="tel3()">전화 테스트3 document</div>
     <div class="footer">
         &copy; 2024 Your Company. All rights reserved.
     </div>
+    <div onclick="window.close()">
+      창 닫기 테스트
+    </div>
 </div>
+<script>
+  const tel2 = () => {
+    window.location.href = 'tel:0806006000'
+  }
+
+  const tel3 = () => {
+    document.location.href = 'tel:0806006000'
+  }
+
+
+</script>
 </body>
 </html>
